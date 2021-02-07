@@ -45,9 +45,9 @@ const String = (props: {
 
   // COMPAT: Browsers will collapse trailing new lines at the end of blocks,
   // so we need to add an extra trailing new lines to prevent that.
-  if (isLast && leaf.text.slice(-1) === '\n') {
-    return <TextString isTrailing text={leaf.text} />
-  }
+  // if (isLast && leaf.text.slice(-1) === '\n') {
+  //   return <TextString isTrailing text={leaf.text} />
+  // }
 
   return <TextString text={leaf.text} />
 }
